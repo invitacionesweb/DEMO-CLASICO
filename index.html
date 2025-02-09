@@ -247,6 +247,18 @@
     </script>
    
    
+   <script>
+    document.addEventListener("scroll", function () {
+        let scrollPos = window.scrollY;
+        let parallax = document.getElementById("parallax");
+    
+        if (parallax) {
+            parallax.style.backgroundPositionY = (scrollPos * 0.5) + "px";
+        }
+    });
+    </script>
+
+    
   
   
        <script>
